@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>48683AF7-7050-4BD2-ACF5-F1D69FF3EE2A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Desafio_2_Retangulo_Personalizado</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>81454FAF-8905-498E-96A4-597F8A51370F</key>
+		<string>https://github.com/cotrim149/Desafio3_desenhando_Retangulo_personalizado.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Desafio_2_Retangulo_Personalizado.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>81454FAF-8905-498E-96A4-597F8A51370F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cotrim149/Desafio3_desenhando_Retangulo_personalizado.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>81454FAF-8905-498E-96A4-597F8A51370F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>81454FAF-8905-498E-96A4-597F8A51370F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Desafio3_desenhando_Retangulo_personalizado</string>
+		</dict>
+	</array>
+</dict>
+</plist>

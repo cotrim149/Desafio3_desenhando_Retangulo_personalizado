@@ -45,11 +45,38 @@
     VCLDesenho *segundaTela = [[VCLDesenho alloc] init];
     
     CGRect retangulo = CGRectMake(originX, originY, largura, altura);
-    
-    VCLView *viewDesenho = [[VCLView alloc]initWithFrame:retangulo];
-    viewDesenho.backgroundColor = self.cor;
 
-    [segundaTela.view addSubview:viewDesenho];
+    
+    if(self.switchTipoImagem.isOn){
+        UIBezierPath *imagem = [UIBezierPath bezierPathWithOvalInRect:retangulo];
+        UIGraphicsBeginImageContext(self.view.bounds.size);
+        
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        
+        CGContextSetFillColorWithColor(context, self.cor.CGColor);
+        [imagem fill];
+        [imagem stroke];
+        
+        UIImage *imagemContexto = UIGraphicsGetImageFromCurrentImageContext();
+        
+        UIGraphicsEndImageContext();
+        
+        UIImageView *imagemView = [[UIImageView alloc] initWithImage:imagemContexto];
+        [segundaTela.view addSubview:imagemView];
+        
+    }else{
+        
+        VCLView *viewDesenho = [[VCLView alloc]initWithFrame:retangulo];
+        viewDesenho.backgroundColor = self.cor;
+        
+        
+        [segundaTela.view addSubview:viewDesenho];
+        
+    }
+    
+    
+    
+    
 
     [self presentViewController:segundaTela animated:YES completion:nil];
 
@@ -82,6 +109,10 @@
     
     self.cor = cor;
     
+}
+
+-(IBAction)verificaSwitch:(id)sender{
+    NSLog(@"%hhd",self.switchTipoImagem.isOn);
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCLViewController">
             <connections>
+                <outlet property="switchTipoImagem" destination="bqI-z1-vC9" id="2IE-5p-SET"/>
                 <outlet property="txtAltura" destination="nIz-mx-210" id="l7Y-wg-TSP"/>
                 <outlet property="txtLargura" destination="lBK-dc-3Wl" id="Bjg-St-MW9"/>
                 <outlet property="txtOriginX" destination="tu3-0c-kJU" id="QsJ-92-oDk"/>
@@ -96,6 +97,9 @@
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bqI-z1-vC9">
                     <rect key="frame" x="136" y="219" width="51" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="verificaSwitch:" destination="-1" eventType="valueChanged" id="MkP-Ns-Is1"/>
+                    </connections>
                 </switch>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elipse" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flG-9h-7pj">
                     <rect key="frame" x="193" y="224" width="47" height="21"/>

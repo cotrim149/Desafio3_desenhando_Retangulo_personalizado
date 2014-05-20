@@ -13,9 +13,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtOriginY;
 @property (weak, nonatomic) IBOutlet UITextField *txtAltura;
 @property (weak, nonatomic) IBOutlet UITextField *txtLargura;
-@property (weak, nonatomic) UIColor *cor;
+@property (weak, nonatomic) IBOutlet UISwitch *switchTipoImagem;
 
+@property (weak, nonatomic) UIColor *cor;
 
 - (IBAction)desenhaImagem:(id)sender;
 - (IBAction)getColor:(id)sender;
+- (IBAction)verificaSwitch:(id)sender;
+
 @end

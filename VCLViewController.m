@@ -85,6 +85,11 @@
     
 }
 
+-(IBAction)limpar:(id)sender{
+    [self.views removeAllObjects];
+}
+
+
 -(IBAction)getColor:(id)sender{
     UISegmentedControl *segmentedCores = (UISegmentedControl *)sender;
     UIColor *cor = [[UIColor alloc] init];

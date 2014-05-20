@@ -16,9 +16,10 @@
 @property (weak, nonatomic) IBOutlet UISwitch *switchTipoImagem;
 
 @property (weak, nonatomic) UIColor *cor;
+@property (nonatomic) NSMutableArray *views;
+
 
 - (IBAction)desenhaImagem:(id)sender;
 - (IBAction)getColor:(id)sender;
-- (IBAction)verificaSwitch:(id)sender;
-
+- (IBAction)limpar:(id)sender;
 @end
